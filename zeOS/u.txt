@@ -1,0 +1,460 @@
+
+user:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+00114000 <main>:
+  114000:	8d 4c 24 04          	lea    0x4(%esp),%ecx
+  114004:	83 e4 f0             	and    $0xfffffff0,%esp
+  114007:	ff 71 fc             	push   -0x4(%ecx)
+  11400a:	55                   	push   %ebp
+  11400b:	89 e5                	mov    %esp,%ebp
+  11400d:	53                   	push   %ebx
+  11400e:	51                   	push   %ecx
+  11400f:	83 ec 1c             	sub    $0x1c,%esp
+  114012:	68 e4 01 10 00       	push   $0x1001e4
+  114017:	e8 f4 01 00 00       	call   114210 <strlen>
+  11401c:	83 c4 0c             	add    $0xc,%esp
+  11401f:	50                   	push   %eax
+  114020:	68 e4 01 10 00       	push   $0x1001e4
+  114025:	6a 01                	push   $0x1
+  114027:	e8 40 03 00 00       	call   11436c <write>
+  11402c:	83 c4 10             	add    $0x10,%esp
+  11402f:	83 f8 ff             	cmp    $0xffffffff,%eax
+  114032:	0f 84 f1 00 00 00    	je     114129 <main+0x129>
+  114038:	83 ec 0c             	sub    $0xc,%esp
+  11403b:	68 f1 01 10 00       	push   $0x1001f1
+  114040:	e8 cb 01 00 00       	call   114210 <strlen>
+  114045:	83 c4 0c             	add    $0xc,%esp
+  114048:	50                   	push   %eax
+  114049:	68 f1 01 10 00       	push   $0x1001f1
+  11404e:	6a 01                	push   $0x1
+  114050:	e8 17 03 00 00       	call   11436c <write>
+  114055:	83 c4 10             	add    $0x10,%esp
+  114058:	83 f8 ff             	cmp    $0xffffffff,%eax
+  11405b:	0f 84 f4 00 00 00    	je     114155 <main+0x155>
+  114061:	83 ec 0c             	sub    $0xc,%esp
+  114064:	68 00 02 10 00       	push   $0x100200
+  114069:	e8 a2 01 00 00       	call   114210 <strlen>
+  11406e:	83 c4 0c             	add    $0xc,%esp
+  114071:	50                   	push   %eax
+  114072:	68 00 02 10 00       	push   $0x100200
+  114077:	6a 01                	push   $0x1
+  114079:	e8 ee 02 00 00       	call   11436c <write>
+  11407e:	83 c4 10             	add    $0x10,%esp
+  114081:	83 f8 ff             	cmp    $0xffffffff,%eax
+  114084:	0f 84 c1 00 00 00    	je     11414b <main+0x14b>
+  11408a:	83 ec 0c             	sub    $0xc,%esp
+  11408d:	68 e4 09 10 00       	push   $0x1009e4
+  114092:	e8 79 01 00 00       	call   114210 <strlen>
+  114097:	83 c4 0c             	add    $0xc,%esp
+  11409a:	50                   	push   %eax
+  11409b:	68 e4 09 10 00       	push   $0x1009e4
+  1140a0:	6a 01                	push   $0x1
+  1140a2:	e8 c5 02 00 00       	call   11436c <write>
+  1140a7:	83 c4 10             	add    $0x10,%esp
+  1140aa:	83 f8 ff             	cmp    $0xffffffff,%eax
+  1140ad:	0f 84 8e 00 00 00    	je     114141 <main+0x141>
+  1140b3:	83 ec 0c             	sub    $0xc,%esp
+  1140b6:	68 e4 09 10 00       	push   $0x1009e4
+  1140bb:	e8 50 01 00 00       	call   114210 <strlen>
+  1140c0:	83 c4 0c             	add    $0xc,%esp
+  1140c3:	50                   	push   %eax
+  1140c4:	6a 00                	push   $0x0
+  1140c6:	6a 01                	push   $0x1
+  1140c8:	e8 9f 02 00 00       	call   11436c <write>
+  1140cd:	83 c4 10             	add    $0x10,%esp
+  1140d0:	83 f8 ff             	cmp    $0xffffffff,%eax
+  1140d3:	74 65                	je     11413a <main+0x13a>
+  1140d5:	83 ec 0c             	sub    $0xc,%esp
+  1140d8:	8d 5d e8             	lea    -0x18(%ebp),%ebx
+  1140db:	68 30 0a 10 00       	push   $0x100a30
+  1140e0:	e8 2b 01 00 00       	call   114210 <strlen>
+  1140e5:	83 c4 0c             	add    $0xc,%esp
+  1140e8:	50                   	push   %eax
+  1140e9:	68 30 0a 10 00       	push   $0x100a30
+  1140ee:	6a 01                	push   $0x1
+  1140f0:	e8 77 02 00 00       	call   11436c <write>
+  1140f5:	5a                   	pop    %edx
+  1140f6:	59                   	pop    %ecx
+  1140f7:	53                   	push   %ebx
+  1140f8:	50                   	push   %eax
+  1140f9:	e8 e2 00 00 00       	call   1141e0 <itoa>
+  1140fe:	89 1c 24             	mov    %ebx,(%esp)
+  114101:	e8 0a 01 00 00       	call   114210 <strlen>
+  114106:	83 c4 0c             	add    $0xc,%esp
+  114109:	50                   	push   %eax
+  11410a:	53                   	push   %ebx
+  11410b:	6a 01                	push   $0x1
+  11410d:	e8 5a 02 00 00       	call   11436c <write>
+  114112:	83 c4 10             	add    $0x10,%esp
+  114115:	83 f8 ff             	cmp    $0xffffffff,%eax
+  114118:	74 19                	je     114133 <main+0x133>
+  11411a:	e8 e2 02 00 00       	call   114401 <exit>
+  11411f:	8d 65 f8             	lea    -0x8(%ebp),%esp
+  114122:	59                   	pop    %ecx
+  114123:	5b                   	pop    %ebx
+  114124:	5d                   	pop    %ebp
+  114125:	8d 61 fc             	lea    -0x4(%ecx),%esp
+  114128:	c3                   	ret
+  114129:	e8 02 01 00 00       	call   114230 <perror>
+  11412e:	e9 05 ff ff ff       	jmp    114038 <main+0x38>
+  114133:	e8 f8 00 00 00       	call   114230 <perror>
+  114138:	eb e0                	jmp    11411a <main+0x11a>
+  11413a:	e8 f1 00 00 00       	call   114230 <perror>
+  11413f:	eb 94                	jmp    1140d5 <main+0xd5>
+  114141:	e8 ea 00 00 00       	call   114230 <perror>
+  114146:	e9 68 ff ff ff       	jmp    1140b3 <main+0xb3>
+  11414b:	e8 e0 00 00 00       	call   114230 <perror>
+  114150:	e9 35 ff ff ff       	jmp    11408a <main+0x8a>
+  114155:	e8 d6 00 00 00       	call   114230 <perror>
+  11415a:	e9 02 ff ff ff       	jmp    114061 <main+0x61>
+  11415f:	90                   	nop
+
+00114160 <itoa.part.0>:
+  114160:	89 d1                	mov    %edx,%ecx
+  114162:	85 c0                	test   %eax,%eax
+  114164:	7e 72                	jle    1141d8 <itoa.part.0+0x78>
+  114166:	55                   	push   %ebp
+  114167:	89 e5                	mov    %esp,%ebp
+  114169:	57                   	push   %edi
+  11416a:	56                   	push   %esi
+  11416b:	89 c6                	mov    %eax,%esi
+  11416d:	53                   	push   %ebx
+  11416e:	31 db                	xor    %ebx,%ebx
+  114170:	83 ec 04             	sub    $0x4,%esp
+  114173:	8d 74 26 00          	lea    0x0(%esi,%eiz,1),%esi
+  114177:	90                   	nop
+  114178:	b8 cd cc cc cc       	mov    $0xcccccccd,%eax
+  11417d:	89 5d f0             	mov    %ebx,-0x10(%ebp)
+  114180:	f7 e6                	mul    %esi
+  114182:	89 f0                	mov    %esi,%eax
+  114184:	c1 ea 03             	shr    $0x3,%edx
+  114187:	8d 3c 92             	lea    (%edx,%edx,4),%edi
+  11418a:	01 ff                	add    %edi,%edi
+  11418c:	29 f8                	sub    %edi,%eax
+  11418e:	83 c0 30             	add    $0x30,%eax
+  114191:	88 04 19             	mov    %al,(%ecx,%ebx,1)
+  114194:	89 f0                	mov    %esi,%eax
+  114196:	83 c3 01             	add    $0x1,%ebx
+  114199:	89 d6                	mov    %edx,%esi
+  11419b:	83 f8 09             	cmp    $0x9,%eax
+  11419e:	7f d8                	jg     114178 <itoa.part.0+0x18>
+  1141a0:	8d 04 19             	lea    (%ecx,%ebx,1),%eax
+  1141a3:	d1 fb                	sar    %ebx
+  1141a5:	74 21                	je     1141c8 <itoa.part.0+0x68>
+  1141a7:	8b 75 f0             	mov    -0x10(%ebp),%esi
+  1141aa:	01 cb                	add    %ecx,%ebx
+  1141ac:	89 c7                	mov    %eax,%edi
+  1141ae:	01 ce                	add    %ecx,%esi
+  1141b0:	0f b6 06             	movzbl (%esi),%eax
+  1141b3:	0f b6 11             	movzbl (%ecx),%edx
+  1141b6:	83 c1 01             	add    $0x1,%ecx
+  1141b9:	83 ee 01             	sub    $0x1,%esi
+  1141bc:	88 41 ff             	mov    %al,-0x1(%ecx)
+  1141bf:	88 56 01             	mov    %dl,0x1(%esi)
+  1141c2:	39 cb                	cmp    %ecx,%ebx
+  1141c4:	75 ea                	jne    1141b0 <itoa.part.0+0x50>
+  1141c6:	89 f8                	mov    %edi,%eax
+  1141c8:	c6 00 00             	movb   $0x0,(%eax)
+  1141cb:	83 c4 04             	add    $0x4,%esp
+  1141ce:	5b                   	pop    %ebx
+  1141cf:	5e                   	pop    %esi
+  1141d0:	5f                   	pop    %edi
+  1141d1:	5d                   	pop    %ebp
+  1141d2:	c3                   	ret
+  1141d3:	8d 74 26 00          	lea    0x0(%esi,%eiz,1),%esi
+  1141d7:	90                   	nop
+  1141d8:	c6 02 00             	movb   $0x0,(%edx)
+  1141db:	c3                   	ret
+  1141dc:	8d 74 26 00          	lea    0x0(%esi,%eiz,1),%esi
+
+001141e0 <itoa>:
+  1141e0:	55                   	push   %ebp
+  1141e1:	89 e5                	mov    %esp,%ebp
+  1141e3:	8b 45 08             	mov    0x8(%ebp),%eax
+  1141e6:	8b 55 0c             	mov    0xc(%ebp),%edx
+  1141e9:	85 c0                	test   %eax,%eax
+  1141eb:	74 0b                	je     1141f8 <itoa+0x18>
+  1141ed:	5d                   	pop    %ebp
+  1141ee:	e9 6d ff ff ff       	jmp    114160 <itoa.part.0>
+  1141f3:	8d 74 26 00          	lea    0x0(%esi,%eiz,1),%esi
+  1141f7:	90                   	nop
+  1141f8:	b8 30 00 00 00       	mov    $0x30,%eax
+  1141fd:	66 89 02             	mov    %ax,(%edx)
+  114200:	5d                   	pop    %ebp
+  114201:	c3                   	ret
+  114202:	8d b4 26 00 00 00 00 	lea    0x0(%esi,%eiz,1),%esi
+  114209:	8d b4 26 00 00 00 00 	lea    0x0(%esi,%eiz,1),%esi
+
+00114210 <strlen>:
+  114210:	55                   	push   %ebp
+  114211:	31 c0                	xor    %eax,%eax
+  114213:	89 e5                	mov    %esp,%ebp
+  114215:	8b 55 08             	mov    0x8(%ebp),%edx
+  114218:	80 3a 00             	cmpb   $0x0,(%edx)
+  11421b:	74 0c                	je     114229 <strlen+0x19>
+  11421d:	8d 76 00             	lea    0x0(%esi),%esi
+  114220:	83 c0 01             	add    $0x1,%eax
+  114223:	80 3c 02 00          	cmpb   $0x0,(%edx,%eax,1)
+  114227:	75 f7                	jne    114220 <strlen+0x10>
+  114229:	5d                   	pop    %ebp
+  11422a:	c3                   	ret
+  11422b:	8d 74 26 00          	lea    0x0(%esi,%eiz,1),%esi
+  11422f:	90                   	nop
+
+00114230 <perror>:
+  114230:	55                   	push   %ebp
+  114231:	89 e5                	mov    %esp,%ebp
+  114233:	57                   	push   %edi
+  114234:	56                   	push   %esi
+  114235:	53                   	push   %ebx
+  114236:	83 ec 2c             	sub    $0x2c,%esp
+  114239:	a1 44 23 10 00       	mov    0x102344,%eax
+  11423e:	8b 5d 08             	mov    0x8(%ebp),%ebx
+  114241:	8d 50 ff             	lea    -0x1(%eax),%edx
+  114244:	83 fa 78             	cmp    $0x78,%edx
+  114247:	0f 87 d3 00 00 00    	ja     114320 <perror+0xf0>
+  11424d:	8b 3c 95 00 00 10 00 	mov    0x100000(,%edx,4),%edi
+  114254:	8d 75 de             	lea    -0x22(%ebp),%esi
+  114257:	b9 29 20 00 00       	mov    $0x2029,%ecx
+  11425c:	c7 45 d5 28 43 6f 64 	movl   $0x646f4328,-0x2b(%ebp)
+  114263:	89 f2                	mov    %esi,%edx
+  114265:	c7 45 d9 69 67 6f 3a 	movl   $0x3a6f6769,-0x27(%ebp)
+  11426c:	c6 45 dd 20          	movb   $0x20,-0x23(%ebp)
+  114270:	66 89 4d d3          	mov    %cx,-0x2d(%ebp)
+  114274:	e8 e7 fe ff ff       	call   114160 <itoa.part.0>
+  114279:	31 c0                	xor    %eax,%eax
+  11427b:	80 3f 00             	cmpb   $0x0,(%edi)
+  11427e:	74 11                	je     114291 <perror+0x61>
+  114280:	31 c0                	xor    %eax,%eax
+  114282:	8d b6 00 00 00 00    	lea    0x0(%esi),%esi
+  114288:	83 c0 01             	add    $0x1,%eax
+  11428b:	80 3c 07 00          	cmpb   $0x0,(%edi,%eax,1)
+  11428f:	75 f7                	jne    114288 <perror+0x58>
+  114291:	83 ec 04             	sub    $0x4,%esp
+  114294:	50                   	push   %eax
+  114295:	57                   	push   %edi
+  114296:	6a 01                	push   $0x1
+  114298:	e8 cf 00 00 00       	call   11436c <write>
+  11429d:	83 c4 0c             	add    $0xc,%esp
+  1142a0:	8d 45 d5             	lea    -0x2b(%ebp),%eax
+  1142a3:	6a 09                	push   $0x9
+  1142a5:	50                   	push   %eax
+  1142a6:	6a 01                	push   $0x1
+  1142a8:	e8 bf 00 00 00       	call   11436c <write>
+  1142ad:	83 c4 10             	add    $0x10,%esp
+  1142b0:	31 c0                	xor    %eax,%eax
+  1142b2:	80 7d de 00          	cmpb   $0x0,-0x22(%ebp)
+  1142b6:	74 11                	je     1142c9 <perror+0x99>
+  1142b8:	8d b4 26 00 00 00 00 	lea    0x0(%esi,%eiz,1),%esi
+  1142bf:	90                   	nop
+  1142c0:	83 c0 01             	add    $0x1,%eax
+  1142c3:	80 3c 06 00          	cmpb   $0x0,(%esi,%eax,1)
+  1142c7:	75 f7                	jne    1142c0 <perror+0x90>
+  1142c9:	83 ec 04             	sub    $0x4,%esp
+  1142cc:	50                   	push   %eax
+  1142cd:	56                   	push   %esi
+  1142ce:	6a 01                	push   $0x1
+  1142d0:	e8 97 00 00 00       	call   11436c <write>
+  1142d5:	83 c4 0c             	add    $0xc,%esp
+  1142d8:	8d 45 d3             	lea    -0x2d(%ebp),%eax
+  1142db:	6a 02                	push   $0x2
+  1142dd:	50                   	push   %eax
+  1142de:	6a 01                	push   $0x1
+  1142e0:	e8 87 00 00 00       	call   11436c <write>
+  1142e5:	83 c4 10             	add    $0x10,%esp
+  1142e8:	31 c0                	xor    %eax,%eax
+  1142ea:	80 3b 00             	cmpb   $0x0,(%ebx)
+  1142ed:	74 0a                	je     1142f9 <perror+0xc9>
+  1142ef:	90                   	nop
+  1142f0:	83 c0 01             	add    $0x1,%eax
+  1142f3:	80 3c 03 00          	cmpb   $0x0,(%ebx,%eax,1)
+  1142f7:	75 f7                	jne    1142f0 <perror+0xc0>
+  1142f9:	83 ec 04             	sub    $0x4,%esp
+  1142fc:	50                   	push   %eax
+  1142fd:	53                   	push   %ebx
+  1142fe:	6a 01                	push   $0x1
+  114300:	e8 67 00 00 00       	call   11436c <write>
+  114305:	c7 05 44 23 10 00 00 	movl   $0x0,0x102344
+  11430c:	00 00 00 
+  11430f:	8d 65 f4             	lea    -0xc(%ebp),%esp
+  114312:	5b                   	pop    %ebx
+  114313:	5e                   	pop    %esi
+  114314:	5f                   	pop    %edi
+  114315:	5d                   	pop    %ebp
+  114316:	c3                   	ret
+  114317:	8d b4 26 00 00 00 00 	lea    0x0(%esi,%eiz,1),%esi
+  11431e:	66 90                	xchg   %ax,%ax
+  114320:	ba 29 20 00 00       	mov    $0x2029,%edx
+  114325:	c7 45 d5 28 43 6f 64 	movl   $0x646f4328,-0x2b(%ebp)
+  11432c:	c7 45 d9 69 67 6f 3a 	movl   $0x3a6f6769,-0x27(%ebp)
+  114333:	c6 45 dd 20          	movb   $0x20,-0x23(%ebp)
+  114337:	66 89 55 d3          	mov    %dx,-0x2d(%ebp)
+  11433b:	85 c0                	test   %eax,%eax
+  11433d:	75 19                	jne    114358 <perror+0x128>
+  11433f:	b8 30 00 00 00       	mov    $0x30,%eax
+  114344:	bf 10 02 10 00       	mov    $0x100210,%edi
+  114349:	8d 75 de             	lea    -0x22(%ebp),%esi
+  11434c:	66 89 45 de          	mov    %ax,-0x22(%ebp)
+  114350:	e9 2b ff ff ff       	jmp    114280 <perror+0x50>
+  114355:	8d 76 00             	lea    0x0(%esi),%esi
+  114358:	8d 75 de             	lea    -0x22(%ebp),%esi
+  11435b:	bf 10 02 10 00       	mov    $0x100210,%edi
+  114360:	89 f2                	mov    %esi,%edx
+  114362:	e8 f9 fd ff ff       	call   114160 <itoa.part.0>
+  114367:	e9 14 ff ff ff       	jmp    114280 <perror+0x50>
+
+0011436c <write>:
+  11436c:	55                   	push   %ebp
+  11436d:	89 e5                	mov    %esp,%ebp
+  11436f:	51                   	push   %ecx
+  114370:	52                   	push   %edx
+  114371:	53                   	push   %ebx
+  114372:	8b 55 08             	mov    0x8(%ebp),%edx
+  114375:	8b 4d 0c             	mov    0xc(%ebp),%ecx
+  114378:	8b 5d 10             	mov    0x10(%ebp),%ebx
+  11437b:	b8 04 00 00 00       	mov    $0x4,%eax
+  114380:	68 8a 43 11 00       	push   $0x11438a
+  114385:	55                   	push   %ebp
+  114386:	89 e5                	mov    %esp,%ebp
+  114388:	0f 34                	sysenter
+
+0011438a <next>:
+  11438a:	5d                   	pop    %ebp
+  11438b:	5b                   	pop    %ebx
+  11438c:	83 f8 00             	cmp    $0x0,%eax
+  11438f:	7d 0c                	jge    11439d <ISOK>
+  114391:	f7 d8                	neg    %eax
+  114393:	a3 44 23 10 00       	mov    %eax,0x102344
+  114398:	b8 ff ff ff ff       	mov    $0xffffffff,%eax
+
+0011439d <ISOK>:
+  11439d:	5b                   	pop    %ebx
+  11439e:	59                   	pop    %ecx
+  11439f:	5a                   	pop    %edx
+  1143a0:	5d                   	pop    %ebp
+  1143a1:	c3                   	ret
+
+001143a2 <gettime>:
+  1143a2:	55                   	push   %ebp
+  1143a3:	89 e5                	mov    %esp,%ebp
+  1143a5:	52                   	push   %edx
+  1143a6:	51                   	push   %ecx
+  1143a7:	b8 0a 00 00 00       	mov    $0xa,%eax
+  1143ac:	68 b6 43 11 00       	push   $0x1143b6
+  1143b1:	55                   	push   %ebp
+  1143b2:	89 e5                	mov    %esp,%ebp
+  1143b4:	0f 34                	sysenter
+
+001143b6 <next2>:
+  1143b6:	5d                   	pop    %ebp
+  1143b7:	59                   	pop    %ecx
+  1143b8:	59                   	pop    %ecx
+  1143b9:	5a                   	pop    %edx
+  1143ba:	5d                   	pop    %ebp
+  1143bb:	c3                   	ret
+
+001143bc <getpid>:
+  1143bc:	55                   	push   %ebp
+  1143bd:	89 e5                	mov    %esp,%ebp
+  1143bf:	52                   	push   %edx
+  1143c0:	51                   	push   %ecx
+  1143c1:	b8 14 00 00 00       	mov    $0x14,%eax
+  1143c6:	68 d0 43 11 00       	push   $0x1143d0
+  1143cb:	55                   	push   %ebp
+  1143cc:	89 e5                	mov    %esp,%ebp
+  1143ce:	0f 34                	sysenter
+
+001143d0 <next3>:
+  1143d0:	5d                   	pop    %ebp
+  1143d1:	59                   	pop    %ecx
+  1143d2:	59                   	pop    %ecx
+  1143d3:	5a                   	pop    %edx
+  1143d4:	5d                   	pop    %ebp
+  1143d5:	c3                   	ret
+
+001143d6 <fork>:
+  1143d6:	55                   	push   %ebp
+  1143d7:	89 e5                	mov    %esp,%ebp
+  1143d9:	52                   	push   %edx
+  1143da:	51                   	push   %ecx
+  1143db:	b8 02 00 00 00       	mov    $0x2,%eax
+  1143e0:	68 ea 43 11 00       	push   $0x1143ea
+  1143e5:	55                   	push   %ebp
+  1143e6:	89 e5                	mov    %esp,%ebp
+  1143e8:	0f 34                	sysenter
+
+001143ea <next4>:
+  1143ea:	5d                   	pop    %ebp
+  1143eb:	59                   	pop    %ecx
+  1143ec:	59                   	pop    %ecx
+  1143ed:	5a                   	pop    %edx
+  1143ee:	83 f8 00             	cmp    $0x0,%eax
+  1143f1:	7d 0c                	jge    1143ff <ISOK2>
+  1143f3:	f7 d8                	neg    %eax
+  1143f5:	a3 44 23 10 00       	mov    %eax,0x102344
+  1143fa:	b8 ff ff ff ff       	mov    $0xffffffff,%eax
+
+001143ff <ISOK2>:
+  1143ff:	5d                   	pop    %ebp
+  114400:	c3                   	ret
+
+00114401 <exit>:
+  114401:	55                   	push   %ebp
+  114402:	89 e5                	mov    %esp,%ebp
+  114404:	52                   	push   %edx
+  114405:	51                   	push   %ecx
+  114406:	b8 01 00 00 00       	mov    $0x1,%eax
+  11440b:	68 15 44 11 00       	push   $0x114415
+  114410:	55                   	push   %ebp
+  114411:	89 e5                	mov    %esp,%ebp
+  114413:	0f 34                	sysenter
+
+00114415 <next5>:
+  114415:	5d                   	pop    %ebp
+  114416:	59                   	pop    %ecx
+  114417:	59                   	pop    %ecx
+  114418:	5a                   	pop    %edx
+  114419:	5d                   	pop    %ebp
+  11441a:	c3                   	ret
+
+0011441b <block>:
+  11441b:	55                   	push   %ebp
+  11441c:	89 e5                	mov    %esp,%ebp
+  11441e:	52                   	push   %edx
+  11441f:	51                   	push   %ecx
+  114420:	b8 0f 00 00 00       	mov    $0xf,%eax
+  114425:	68 2f 44 11 00       	push   $0x11442f
+  11442a:	55                   	push   %ebp
+  11442b:	89 e5                	mov    %esp,%ebp
+  11442d:	0f 34                	sysenter
+
+0011442f <next6>:
+  11442f:	5d                   	pop    %ebp
+  114430:	59                   	pop    %ecx
+  114431:	59                   	pop    %ecx
+  114432:	5a                   	pop    %edx
+  114433:	5d                   	pop    %ebp
+  114434:	c3                   	ret
+
+00114435 <unblock>:
+  114435:	55                   	push   %ebp
+  114436:	89 e5                	mov    %esp,%ebp
+  114438:	52                   	push   %edx
+  114439:	51                   	push   %ecx
+  11443a:	8b 55 08             	mov    0x8(%ebp),%edx
+  11443d:	b8 10 00 00 00       	mov    $0x10,%eax
+  114442:	68 4c 44 11 00       	push   $0x11444c
+  114447:	55                   	push   %ebp
+  114448:	89 e5                	mov    %esp,%ebp
+  11444a:	0f 34                	sysenter
+
+0011444c <next7>:
+  11444c:	5d                   	pop    %ebp
+  11444d:	59                   	pop    %ecx
+  11444e:	59                   	pop    %ecx
+  11444f:	5a                   	pop    %edx
+  114450:	5d                   	pop    %ebp
+  114451:	c3                   	ret
